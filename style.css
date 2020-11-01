@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  padding: 1.5rem 2.5rem;
+}
+
+h1 {
+  font-family: "Righteous", cursive;
+  font-size: 9rem;
+  color: #e63939;
+  text-align: center;
+}
+
+h2 {
+  font-family: "Righteous", cursive;
+  font-size: 3rem;
+  color: #e63939;
+  text-align: center;
+}
+
+.basis {
+  position: relative;
+  width: 45%;
+  height: 50vh;
+  background-color: lightgray;
+  margin: auto;
+  border-radius: 5%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 6px 6px rgba(0, 0, 0, 0.4);
+}
+
+.drukknop {
+  cursor: pointer;
+  width: 30%;
+  height: 30vh;
+  clip-path: polygon(
+    30% 0%,
+    70% 0%,
+    100% 30%,
+    100% 70%,
+    70% 100%,
+    30% 100%,
+    0% 70%,
+    0% 30%
+  );
+  background: linear-gradient(to right bottom, #af1616, #cf1a1a, #e63939);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+.modal__container {
+  display: none;
+  width: 45%;
+  height: 80vh;
+  padding: 2px 10px;
+  background-color: yellowgreen;
+  margin: auto;
+  border-radius: 5%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-51%) translateX(-50%);
+}
+
+.close {
+  color: #e63939;
+  float: right;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
